@@ -1,0 +1,19 @@
+a:hover{
+            cursor:grab;
+            animation: expand 20s ease-in forwards;
+}
+/* Use this in the animation function */
+@keyframes expand{
+    0%{
+        color:red;
+    }
+    20%{
+        color:green;
+    }
+    40%{
+        color:blue;
+    }
+    80%{
+        color: purple;
+       }
+   }
