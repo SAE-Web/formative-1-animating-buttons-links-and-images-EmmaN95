@@ -1,0 +1,270 @@
+
+/********* layout *******/
+header {
+    background-color:rgb(255, 255, 255);
+    padding: 0px;
+    font-size: 30;
+    color: #220801;
+    border:  black;
+  }
+
+footer {
+    padding: 30px; 
+    color:white;
+    background-color:rgb(6, 6, 6);
+    border-top: 2px solid rgb(32, 32, 32);
+    font-size: 15px;
+  }
+  
+  * {
+    padding: 0;
+    margin:0;
+    box-sizing: border;
+  }
+
+ /* for the navagation bar */
+ #banner {
+     padding: 20px; 
+     font-size: 15px;
+     background-color:#dadada;   
+     text-decoration: none;         
+       }
+
+/* for the main text */
+main {
+     background-color:rgb(32, 32, 32) ;   
+    padding:0;
+    margin:0; 
+    text-decoration: none;
+       }
+
+body {
+    text-align: center; 
+    font-family:didot; 
+    font-size:20px; 
+}
+
+a{
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+       }
+
+p {
+    padding-bottom: 20px;
+    color: white;
+}
+
+
+
+/******* menu *********/
+
+/* basic hover effect on menu */
+a:hover{
+    color:#ff0000;
+    text-decoration:none;
+       }
+
+
+    
+
+/********* images *********/
+
+/* hover effect over image, the overlay */
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 200%;
+  height: auto;
+  opacity: 1;
+  border-radius:;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 200%;
+  transition: .25s ease;
+  background-color: rgb(165, 10, 49);
+  opacity: 0;
+}
+
+
+.container:hover .overlay {
+  opacity: 0.75;
+  border-radius:;
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+      
+
+
+/******* buttons ********/
+
+/* button style */
+.button {
+  background-color: rgb(209, 209, 209); /* Green */
+  box-sizing: border-box;
+  border: 5px solid rgb(8, 1, 1);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+ 
+/* grow hover */ 
+.grow:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+
+
+/* rotate hover */ 
+.rotate:hover
+{
+        -webkit-transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+}
+
+
+
+
+/* animation effect for all the links */
+a, a > span {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  line-height: 24px;
+}
+a:before, a:after, a > span:before, a > span:after {
+  content: '';
+  position: absolute;
+  transition: transform .5s ease;
+}
+
+/* boxed right effect */
+
+.effect7 {
+  display: inline-block;
+  overflow: hidden;
+}
+.effect7:before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #e60023;
+  transform: translateX(-100%);
+}
+.effect7:after {
+  content: attr(data-content);
+  left: 0;
+  top: 0;
+  width: 0;
+  margin: 12px;
+  color: ;
+  opacity: 0.5;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: width .5s ease;
+}
+.effect7 > span {
+  display: block;
+  margin: 2px;
+  padding: 10px;
+  background: #dadada;
+}
+.effect7:hover:before {
+  transform: translateX(0);
+}
+.effect7:hover:after {
+  width: calc(100% - 24px);
+}
+
+/* lined top and bottom hover effect */
+.effect4 {
+  padding: 10px;
+  display: inline-block;
+  overflow: hidden;
+}
+.effect4:before, .effect4:after {
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #e60023;
+}
+.effect4:before {
+  bottom: 0;
+  transform: translateX(-100%);
+}
+.effect4:after {
+  top: 0;
+  transform: translateX(100%);
+}
+.effect4:hover:before, .effect4:hover:after {
+  transform: translateX(0);
+}
+
+ /* boxed down hover effect */
+
+.effect8 {
+  display: inline-block;
+  overflow: hidden;
+}
+.effect8:before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #e60023;
+  transform: translateY(-100%);
+}
+.effect8:after {
+  content: attr(data-content);
+  top: 0;
+  left: 0;
+  height: 0;
+  margin: 12px;
+  color: ;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: height .5s ease;
+}
+.effect8 > span {
+  display: block;
+  margin: 2px;
+  padding: 10px;
+  background: #dadada;
+}
+.effect8:hover:before {
+  transform: translateY(0);
+}
+.effect8:hover:after {
+  height: calc(100% - 24px);
+}
