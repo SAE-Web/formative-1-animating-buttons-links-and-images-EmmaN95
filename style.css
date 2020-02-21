@@ -8,6 +8,14 @@ header {
     border:  black;
   }
 
+#head {
+  background-color:rgb(0, 0, 0);
+  padding: 0px;
+  font-size: 30;
+  color: #220801;
+  border:  black;
+}
+
 footer {
     padding: 30px; 
     color:white;
@@ -30,9 +38,10 @@ footer {
      text-decoration: none;         
        }
 
+       
 /* for the main text */
 main {
-     background-color:rgb(32, 32, 32) ;   
+     background-color:rgb(0, 0, 0) ;   
     padding:0;
     margin:0; 
     text-decoration: none;
@@ -267,4 +276,23 @@ a:before, a:after, a > span:before, a > span:after {
 }
 .effect8:hover:after {
   height: calc(100% - 24px);
+}
+
+/** animated underline **/
+.effect3 {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+.effect3:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #e60023;
+  transform: translateX(-100%);
+}
+.effect3:hover:before {
+  transform: translateX(0);
 }
